@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan Results | Web Vulnerability Scanner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="badge">
+        <span class="badge-icon">📊</span>
+        Scan Complete
+    </div>
+    <h2>Scan Results</h2>
+    <p class="subtitle">Security analysis for {{ r.url }}</p>
+
+    <div class="result-grid">
+        <div class="result-item">
+            <span class="result-label">Target URL</span>
+            <span class="result-value">{{ r.url }}</span>
+        </div>
+        <div class="result-item">
+            <span class="result-label">HTTPS Status</span>
+            <span class="result-value">{{ r.https }}</span>
+        </div>
+        <div class="result-item">
+            <span class="result-label">Forms Detected</span>
+            <span class="result-value">{{ r.forms }}</span>
+        </div>
+        <div class="result-item">
+            <span class="result-label">Risk Level</span>
+            <span class="severity {{ r.severity|lower }}">{{ r.severity }}</span>
+        </div>
+    </div>
+
+    <div class="headers-section">
+        <div class="headers-title">Security Headers Status</div>
+        <div class="headers-list">
+        {% for h in r.missing_headers %}
+            <div class="header-item">
+                <span>⚠ {{ h }}</span>
+            </div>
+        {% else %}
+            <div class="header-item success">
+                <span>✓ All security headers present</span>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+
+    <div class="actions">
+        <a class="btn btn-primary" href="/download">⬇ Download PDF Report</a>
+        <a class="btn btn-secondary" href="/">← New Scan</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

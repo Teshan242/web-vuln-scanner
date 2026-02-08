@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Vulnerability Scanner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="badge">
+                <span class="badge-icon">🛡</span>
+                Cyber Security Tool
+            </div>
+            <h1>Web Vulnerability Scanner</h1>
+            <p class="subtitle">Analyze websites for security vulnerabilities and missing headers</p>
+
+            <form method="POST" class="scan-form">
+                <div class="input-group">
+                    <input type="text" name="url" placeholder="https://example.com" required>
+                </div>
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" name="allow_invalid_ssl">
+                    <span class="checkbox-label">Allow invalid SSL certificates (testing only)</span>
+                </label>
+                <button type="submit" class="btn btn-primary">
+                    <span>Start Secure Scan</span>
+                    <span>→</span>
+                </button>
+            </form>
+
+            <div class="footer">
+                <div class="footer-links">
+                    <a class="footer-link" href="/history">📊 View History</a>
+                </div>
+                <p class="credit">Cyber Security Project • by Teshan</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

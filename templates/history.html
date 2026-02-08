@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan History | Web Vulnerability Scanner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="badge">
+        <span class="badge-icon">📊</span>
+        History
+    </div>
+    <h2>Recent Scans</h2>
+    <p class="subtitle">Last 10 vulnerability scans performed</p>
+
+    <div class="history-list">
+      {% for h in history %}
+        <div class="history-item">
+          <span class="history-url">{{ h.url }}</span>
+          <span class="severity {{ h.severity|lower }}">{{ h.severity }}</span>
+        </div>
+      {% else %}
+        <div class="empty-state">
+            <div class="empty-state-icon">📭</div>
+            <p>No scans yet. Start your first security scan!</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="actions">
+        <a class="btn btn-secondary" href="/">← Back to Scanner</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

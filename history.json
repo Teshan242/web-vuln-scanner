@@ -1,0 +1,94 @@
+[
+  {
+    "url": "https://teshan242.github.io/",
+    "https": "Yes",
+    "missing_headers": [
+      "X-Frame-Options",
+      "X-XSS-Protection",
+      "Content-Security-Policy"
+    ],
+    "forms": 1,
+    "severity": "High"
+  },
+  {
+    "url": "https://teshan242.github.io/",
+    "https": "Yes",
+    "missing_headers": [
+      "X-Frame-Options",
+      "X-XSS-Protection",
+      "Content-Security-Policy"
+    ],
+    "forms": 1,
+    "severity": "High"
+  },
+  {
+    "url": "https://web.whatsapp.com/",
+    "https": "Yes",
+    "missing_headers": [],
+    "forms": 0,
+    "severity": "Low"
+  },
+  {
+    "url": "https://web.whatsapp.com/",
+    "https": "Yes",
+    "missing_headers": [],
+    "forms": 0,
+    "severity": "Low"
+  },
+  {
+    "url": "https://web.whatsapp.com/",
+    "https": "Yes",
+    "missing_headers": [],
+    "forms": 0,
+    "severity": "Low"
+  },
+  {
+    "url": "https://teshan242.github.io/",
+    "https": "Yes",
+    "missing_headers": [
+      "X-Frame-Options",
+      "X-XSS-Protection",
+      "Content-Security-Policy"
+    ],
+    "forms": 1,
+    "severity": "High"
+  },
+  {
+    "url": "https://teshan242.github.io/",
+    "https": "Yes",
+    "missing_headers": [
+      "X-Frame-Options",
+      "X-XSS-Protection",
+      "Content-Security-Policy"
+    ],
+    "forms": 1,
+    "severity": "High"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "https": "Yes",
+    "missing_headers": [],
+    "forms": 0,
+    "severity": "Low"
+  },
+  {
+    "url": "https://courseweb.sliit.lk/",
+    "https": "Connection Failed",
+    "missing_headers": [
+      "Unable to retrieve headers"
+    ],
+    "forms": 0,
+    "severity": "Error",
+    "error": "HTTPSConnectionPool(host='courseweb.sliit.lk', port=443): Read timed out. (read timeout=12)"
+  },
+  {
+    "url": "https://courseweb.sliit.lk/",
+    "https": "Connection Failed",
+    "missing_headers": [
+      "Unable to retrieve headers"
+    ],
+    "forms": 0,
+    "severity": "Error",
+    "error": "HTTPSConnectionPool(host='courseweb.sliit.lk', port=443): Read timed out. (read timeout=12)"
+  }
+]
